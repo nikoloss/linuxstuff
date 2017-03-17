@@ -14,7 +14,7 @@ function downpaper
               |sed 's/m.jpg/o.jpg/'`
     debug start downloading [$img]
     wget $img -O paper.jpg
-    pcmanfm -w `pwd`/paper.jpg
+    pcmanfm -w /home/$USER/workspace/linuxstuff/wallpapaer/paper.jpg
 }
 
 downpaper
