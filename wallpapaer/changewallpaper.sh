@@ -44,5 +44,5 @@ function widgify
     pcmanfm -w `pwd`/dest.jpg
 }
 
-#downpaper
+downpaper
 widgify
