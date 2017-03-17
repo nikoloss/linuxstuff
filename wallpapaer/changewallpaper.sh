@@ -8,7 +8,7 @@ function debug
 
 function downpaper
 {
-    local img=`curl -s http://www.topit.me/tag/pc壁纸 \
+    local img=`curl -s http://www.topit.me/tag/1080p \
               |grep -oP "http:[^>]*?m.jpg" \
               |sed -n $[$RANDOM%20+1]p\
               |sed 's/m.jpg/o.jpg/'`
@@ -35,14 +35,14 @@ function widgify
 	    -fill skyblue \
 	    -pointsize 60 \
 	    -font 文泉驿等宽正黑 \
-	    -draw "fill-opacity 0.6 roundrectangle 180,150 650,550 10,10" \
+	    -draw "fill-opacity 0.6 roundrectangle 180,170 650,550 10,10" \
 	    -fill white \
-	    -draw "text 200,220 '$temp℃ /$status'" \
+	    -draw "text 200,250 '$temp℃ /$status'" \
 	    -pointsize 40  \
-	    -draw "text 220,300 '`env LC_ALL=en_US.UTF-8 date "+%a %B"`'" dest.jpg
+	    -draw "text 200,300 '`env LC_ALL=en_US.UTF-8 date "+%a %B"`'" dest.jpg
     #把修改壁纸的语句从downpaper函数挪过来！记住图片名字换成合成图dest而非papaer
     pcmanfm -w `pwd`/dest.jpg
 }
 
-downpaper
+#downpaper
 widgify
