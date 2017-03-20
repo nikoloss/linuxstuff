@@ -8,7 +8,7 @@ function debug
 
 function downpaper
 {
-    local img=`curl -s http://www.topit.me/tag/pc壁纸/hot \
+    local img=`curl -s http://www.topit.me/tag/1080p \
               |grep -oP "http:[^>]*?m.jpg" \
               |sed -n $[$RANDOM%20+1]p\
               |sed 's/m.jpg/o.jpg/'`
