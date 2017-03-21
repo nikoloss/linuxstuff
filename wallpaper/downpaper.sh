@@ -10,7 +10,7 @@ function debug
 
 function downpaper
 {
-    local img=$(curl -s http://www.topit.me/tag/PC壁纸/hot \
+    local img=$(curl -s http://www.topit.me/tag/PC壁纸/ \
               |grep -oP "http:[^>]*?m.jpg" \
               |sed -n $[$RANDOM%20+1]p \
               |sed 's/m.jpg/o.jpg/')
