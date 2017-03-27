@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #定义图片目录路径
 DIR_PIC=/home/$USER/Pictures

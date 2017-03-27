@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 function debug
 {
     #debug函数用来调试，可以直接往标准输出打印也可以echo $@ > xx.log来打日志
