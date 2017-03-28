@@ -3,7 +3,7 @@
 declare -a songs #-a定义songs为Array结构
 declare -i size=0 #-i定义size为数字类型 songs的长度
 declare -i cursor=0 #定义选中光标
-declare -i volume=10 #音量
+declare -i volume=5 #音量
 declare vol #什么参数都不加，默认为字符串
 declare title
 declare CONTROL_FILE=/tmp/control
