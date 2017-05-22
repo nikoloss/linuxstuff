@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 function guess
 {
     local dice=$(($RANDOM % 6))

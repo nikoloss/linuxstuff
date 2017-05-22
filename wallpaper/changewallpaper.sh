@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 function debug
 {
     #debug函数用来调试，可以直接往标准输出打印也可以echo $@ > xx.log来打日志
@@ -8,7 +8,8 @@ function debug
 
 function downpaper
 {
-    local img=`curl -s http://www.topit.me/tag/1080p \
+    local img=`curl -s http://www.topit.me/tag/pc壁纸 \
+
               |grep -oP "http:[^>]*?m.jpg" \
               |sed -n $[$RANDOM%20+1]p\
               |sed 's/m.jpg/o.jpg/'`
