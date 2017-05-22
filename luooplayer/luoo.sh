@@ -24,13 +24,13 @@ function loadsongs {
     if [ -z $1 ] ;then
         #如果没有参数则自动获取最新专辑编号
         vol=`curl -s www.luoo.net \
-            |grep -oP "http://www.luoo.net/music/\d+" \
+            |grep -oP "http://www.luoo.net/vol/index/\d+" \
             |grep -oP "\d+"|head -n1`
     else
         #如果有参数则加载指定专辑
         vol=$1
     fi
-    local html=$(curl -s http://www.luoo.net/music/$vol)
+    local html=$(curl -s http://www.luoo.net/vol/index/$vol)
     title=$(echo $html \
                     |grep -oP "vol-title\">[^<]+<" \
                     |grep -oP ">[^<]+<")
